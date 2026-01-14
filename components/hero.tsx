@@ -1,5 +1,6 @@
 "use client"
 
+import Link from "next/link"
 import { useEffect, useState } from "react"
 
 export default function Hero() {
@@ -34,12 +35,14 @@ export default function Hero() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <button className="px-8 py-4 bg-primary text-primary-foreground rounded-full hover:bg-accent transition-all duration-300 font-semibold hover:shadow-lg">
+              <Link href={"https://wa.me/918800003118"} >
+              <button className="px-8 py-4 bg-primary text-primary-foreground rounded-full hover:bg-accent transition-all duration-300 font-semibold hover:shadow-lg hover:cursor-cell ">
                 Book Consultation
               </button>
-              <button className="px-8 py-4 border border-primary text-primary rounded-full hover:bg-primary/5 transition-all duration-300 font-semibold">
+              </Link>
+              {/* <button className="px-8 py-4 border border-primary text-primary rounded-full hover:bg-primary/5 transition-all duration-300 font-semibold">
                 Learn More
-              </button>
+              </button> */}
             </div>
           </div>
 
@@ -50,7 +53,7 @@ export default function Hero() {
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-to-br from-accent/20 to-secondary/20 rounded-3xl -z-10"></div>
               <img
-                src="/luxury-dental-clinic-aesthetic-treatment.jpg"
+                src="/1.JPG"
                 alt="Solea Dental Clinic"
                 className="w-full rounded-3xl shadow-2xl"
               />

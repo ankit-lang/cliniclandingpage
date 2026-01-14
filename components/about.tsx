@@ -1,5 +1,6 @@
 "use client"
 
+import Link from "next/link"
 import { useEffect, useState } from "react"
 
 export default function About() {
@@ -40,7 +41,7 @@ export default function About() {
           >
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-to-br from-accent/30 to-secondary/30 rounded-3xl -z-10 blur-2xl"></div>
-              <img src="/luxury-clinic-interior-modern-design-aesthetic.jpg" alt="Solea Clinic" className="w-full rounded-3xl shadow-2xl" />
+              <img src="/2.JPG" alt="Solea Clinic" className="w-full rounded-3xl shadow-2xl" />
             </div>
           </div>
 
@@ -68,15 +69,16 @@ export default function About() {
               We believe every client deserves personalized care in a luxurious setting. From initial consultation to
               final results, we ensure an exceptional experience.
             </p>
-
-            <button className="px-8 py-4 bg-primary text-primary-foreground rounded-full hover:bg-accent transition-all duration-300 font-semibold hover:shadow-lg">
+            <Link href={"https://wa.me/918800003118"} >
+            <button  className="px-8 py-4 bg-primary text-primary-foreground rounded-full hover:bg-accent transition-all duration-300 font-semibold hover:shadow-lg">
               Schedule Your Visit
             </button>
+            </Link>
           </div>
         </div>
 
         {/* Stats */}
-        <div className="grid md:grid-cols-4 gap-8 pt-12 border-t border-border">
+        {/* <div className="grid md:grid-cols-4 gap-8 pt-12 border-t border-border">
           {stats.map((stat, idx) => (
             <div
               key={idx}
@@ -89,7 +91,7 @@ export default function About() {
               <div className="text-muted-foreground text-sm">{stat.label}</div>
             </div>
           ))}
-        </div>
+        </div> */}
       </div>
     </section>
   )

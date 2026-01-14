@@ -28,10 +28,11 @@ export default function Header({ isScrolled }: HeaderProps) {
           {/* Logo */}
           <Link href="/" className="group">
             <div className="flex flex-col">
-              <span className="text-2xl font-bold text-primary tracking-wider transition-colors group-hover:text-accent">
+              {/* <span className="text-2xl font-bold text-primary tracking-wider transition-colors group-hover:text-accent">
                 SOLEA
               </span>
-              <span className="text-xs text-muted-foreground tracking-widest uppercase">Aesthetic Clinic</span>
+              <span className="text-xs text-muted-foreground tracking-widest uppercase">Aesthetic Clinic</span> */}
+              <img src="/logos.png" alt="logo"  className="h-[250px] " />
             </div>
           </Link>
 
@@ -51,9 +52,11 @@ export default function Header({ isScrolled }: HeaderProps) {
 
           {/* CTA Button */}
           <div className="hidden md:flex">
-            <button className="px-8 py-2 bg-primary text-primary-foreground rounded-full hover:bg-accent transition-colors duration-300 text-sm font-semibold">
+            <Link href={"https://wa.me/918800003118"} >
+            <button className="px-8 py-2 bg-primary text-primary-foreground rounded-full hover:bg-accent transition-colors duration-300 text-sm font-semibold hover:cursor-cell">
               Book Appointment
             </button>
+            </Link>
           </div>
 
           {/* Mobile Menu Button */}

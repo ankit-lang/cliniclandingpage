@@ -3,14 +3,14 @@ export default function Footer() {
 
   const footerLinks = {
     Services: ["Dental Aesthetics", "Facial Treatments", "Skin Care", "Hair Solutions"],
-    Company: ["About Us", "Our Team", "Testimonials", "Blog"],
-    Legal: ["Privacy Policy", "Terms of Service", "Cookie Policy"],
+    Company: ["About Us", "Testimonials", ],
+    // Legal: ["Privacy Policy", "Terms of Service", "Cookie Policy"],
   }
 
   return (
     <footer className="bg-foreground text-background pt-20 pb-8 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
-        <div className="grid md:grid-cols-4 gap-12 mb-12">
+        <div className="grid md:grid-cols-3 gap-12 mb-12">
           {/* Brand */}
           <div>
             <div className="mb-4">
@@ -44,15 +44,15 @@ export default function Footer() {
           <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
             <p className="text-background/70 text-sm">© {currentYear} Solea Aesthetic Clinic. All rights reserved.</p>
             <div className="flex gap-6">
-              <a href="#" className="text-background/70 hover:text-background transition-colors text-sm">
+              <a href="https://www.instagram.com/solea.aesthetics?igsh=Mzl3bTNzOGRybGk5" className="text-background/70 hover:text-background transition-colors text-sm">
                 Instagram
               </a>
-              <a href="#" className="text-background/70 hover:text-background transition-colors text-sm">
+              {/* <a href="#" className="text-background/70 hover:text-background transition-colors text-sm">
                 Facebook
               </a>
               <a href="#" className="text-background/70 hover:text-background transition-colors text-sm">
                 LinkedIn
-              </a>
+              </a> */}
             </div>
           </div>
         </div>

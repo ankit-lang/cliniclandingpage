@@ -2,7 +2,8 @@
 
 import { useState, useEffect } from "react"
 import ServiceCard from "./service-card"
-
+import SoleaServices from "./Service1"
+import Service2 from "./Service2"
 const serviceCategories = [
   {
     title: "Dental Aesthetics",
@@ -79,44 +80,19 @@ export default function Services() {
   }, [])
 
   return (
-    <section id="services" className="py-24 px-4 sm:px-6 lg:px-8 bg-muted/30">
+    <section id="services" className="py-12 px-4 sm:px-6 lg:px-8 bg-muted/30">
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
-        <div className="text-center mb-16">
-          <div className="flex items-center justify-center gap-4 mb-6">
-            <div className="w-12 h-0.5 bg-accent"></div>
-            <span className="text-xs font-semibold tracking-widest text-accent uppercase">Our Services</span>
-            <div className="w-12 h-0.5 bg-accent"></div>
-          </div>
-          <h2
-            className={`text-4xl md:text-5xl font-serif font-bold text-foreground mb-4 transition-all duration-1000 ${isVisible ? "opacity-100" : "opacity-0"}`}
-          >
-            Comprehensive Aesthetic Care
-          </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            From advanced dental treatments to cutting-edge skin and wellness therapies
-          </p>
-        </div>
+      
 
         {/* Service Categories Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
-          {serviceCategories.map((category, index) => (
-            <ServiceCard
-              key={index}
-              category={category}
-              index={index}
-              isActive={activeIndex === index}
-              isVisible={isVisible}
-              onClick={() => setActiveIndex(index)}
-            />
-          ))}
-        </div>
+        <SoleaServices/>
 
         {/* Featured Service Detail */}
         <div
-          className={`bg-white rounded-3xl p-8 md:p-12 shadow-lg transition-all duration-500 border border-border ${isVisible ? "opacity-100 scale-100" : "opacity-0 scale-95"}`}
+          className={`bg-white rounded-3xl mt-4 shadow-lg transition-all duration-500 border border-border ${isVisible ? "opacity-100 scale-100" : "opacity-0 scale-95"}`}
         >
-          <div className="grid md:grid-cols-2 gap-8 items-center">
+          {/* <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
               <h3 className="text-3xl font-serif font-bold text-foreground mb-4">
                 {serviceCategories[activeIndex].title}
@@ -145,7 +121,8 @@ export default function Services() {
                 className="w-full rounded-2xl shadow-lg"
               />
             </div>
-          </div>
+          </div> */}
+          <Service2/>
         </div>
       </div>
     </section>

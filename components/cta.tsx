@@ -1,5 +1,6 @@
 "use client"
 
+import Link from "next/link"
 import { useEffect, useState } from "react"
 
 export default function CTA() {
@@ -48,15 +49,21 @@ export default function CTA() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="px-10 py-4 bg-primary text-primary-foreground rounded-full hover:bg-accent transition-all duration-300 font-semibold text-lg hover:shadow-xl">
+            <Link href={"https://wa.me/918800003118"} >
+            <button className="px-10 py-4 bg-primary text-primary-foreground rounded-full hover:bg-accent transition-all duration-300 font-semibold text-lg hover:shadow-xl hover:cursor-pointer">
               Book Appointment
             </button>
-            <button className="px-10 py-4 border-2 border-primary text-primary rounded-full hover:bg-primary/5 transition-all duration-300 font-semibold text-lg">
+            </Link>
+            <a href="tel:+ 8800003118 " >
+            <button className="px-10 py-4 border-2 border-primary text-primary rounded-full hover:bg-primary/5 transition-all duration-300 font-semibold text-lg hover:cursor-pointer
+            ">
               Contact Us
             </button>
+            </a>
+              
           </div>
 
-          <p className="text-muted-foreground text-sm mt-8">Call us: +1 (555) 123-4567 | Email: hello@solea.clinic</p>
+          {/* <p className="text-muted-foreground text-sm mt-8  ">  <a href="tel:+ 8800003118">Call us:  8800003118</a> </p> */}
         </div>
       </div>
     </section>
