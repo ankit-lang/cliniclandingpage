@@ -41,7 +41,7 @@ const services = [
   },
   {
     title: "Wellness & Glow",
-    items: ["IV Glutathione Therapy", "Vampire Facial / PRP For Face and PRP for Hairloss"],
+    items: ["IV Glutathione Therapy", "Vampire Facial ","PRP For Face","PRP for Hairloss"],
   },
 ];
 
