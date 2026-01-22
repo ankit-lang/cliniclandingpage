@@ -6,7 +6,7 @@ const services = [
     items: [
       "Laser Hair Reduction",
       "Acne & Acne Scar Treatment",
-      "Pigmentation Treatment (Face / Underarms / Beard Area)",
+      "Pigmentation Treatment (Face / Underarms / Bikini Area)",
       "Melasma Treatment",
       "Dark Circle Treatment",
       "Freckles Treatment",
@@ -41,7 +41,7 @@ const services = [
   },
   {
     title: "Wellness & Glow",
-    items: ["IV Glutathione Therapy", "Vampire Facial / PRP Facial (Face & Hair)"],
+    items: ["IV Glutathione Therapy", "Vampire Facial / PRP For Face and PRP for Hairloss"],
   },
 ];
 
