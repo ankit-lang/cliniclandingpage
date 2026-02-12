@@ -54,7 +54,7 @@ export default function CTA() {
               Book Appointment
             </button>
             </Link>
-            <a href="tel:+ 8800003118 " >
+            <a href="tel:+ 8800860856 " >
             <button className="px-10 py-4 border-2 border-primary text-primary rounded-full hover:bg-primary/5 transition-all duration-300 font-semibold text-lg hover:cursor-pointer
             ">
               Contact Us
