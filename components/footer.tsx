@@ -44,8 +44,11 @@ export default function Footer() {
           <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
             <p className="text-background/70 text-sm">© {currentYear} Solea Aesthetic Clinic. All rights reserved.</p>
             <div className="flex gap-6">
+              <a href="tel:+918800003118" className="text-background/70 hover:text-background transition-colors text-sm">
+               +91 8800003118
+              </a>
               <a href="tel:+918800860856" className="text-background/70 hover:text-background transition-colors text-sm">
-               +91 8800860856
+                +91 8800860856
               </a>
               <a href="https://www.instagram.com/solea.aesthetics?igsh=Mzl3bTNzOGRybGk5" className="text-background/70 hover:text-background transition-colors text-sm">
                 Instagram
